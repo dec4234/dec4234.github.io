@@ -3,20 +3,26 @@
   <head>
     <title>dec4234's Portfolio</title>
     <link rel="icon" href="assests/images/elmorise.png" />
-    <link type="text/css" rel="stylesheet" href="css/indexStyle.css">
+    <link type="text/css" rel="stylesheet" href="css/indexStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="sidenav">
-        <title>Hey</title>
-        <a href="experience/java/JDA.html">Java</a>
-        <a href="#services">C++</a>
-        <a href="#hey">Web Dev</a>
+    
+
+    <div class="sidebar bar-block light-grey card" style="width: 160px">
+      <a href="index.html" class="sideBarItem button">Home</a>
+      <button class="button block left-align" onclick="toggleList()">
+        Java <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demoAcc" class="hide white card">
+        <a href="experience/java/JDA.html" class="sideBarItem button">JavaDestinyAPI</a>
+      </div>
     </div>
 
-    <div class="main">
-        <h2>dec4234's Portfolio</h2>
-        <p>Hey there</p>
+    <div class="container" style="margin-left: 160px">
+      <h2>dec4234's Portfolio</h2>
+      <p>Hey there</p>
     </div>
 
     <script type="text/javascript" src="js/index.js"></script>
