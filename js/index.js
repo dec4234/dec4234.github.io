@@ -1,10 +1,11 @@
-function toggleList() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-green";
+var nav = document.getElementById('nav');
+
+window.onscroll = function () {
+    if(window.pageYOffset > 100) {
+        nav.style.position = "fixed";
+        nav.style.top = 0;
     } else {
-        x.className = x.className.replace(" w3-show", "");
-        x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+        nav.style.position = 'relative';
+        nav.style.top = 100;
     }
 }
